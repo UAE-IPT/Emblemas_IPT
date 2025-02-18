@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventário de Emblemas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+            gap: 15px;
+            padding: 20px;
+        }
+        .image-container {
+            width: 200px; /* 2x maior */
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantém o tamanho fixo sem distorcer */
+            border-radius: 10px;
+        }
+        .image-container p {
+            margin-top: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inventário de Emblemas</h1>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/UAE-IPT/Emblemas_IPT/main/imagens/emblema1.jpg" alt="Emblema 1">
+            <p>Emblema 1</p>
+        </div>
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/UAE-IPT/Emblemas_IPT/main/imagens/emblema2.jpg" alt="Emblema 2">
+            <p>Emblema 2</p>
+        </div>
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/UAE-IPT/Emblemas_IPT/main/imagens/emblema3.jpg" alt="Emblema 3">
+            <p>Emblema 3</p>
+        </div>
+    </div>
+
+</body>
+</html>
